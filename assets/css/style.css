@@ -187,11 +187,22 @@
     bottom: 8%;
     left: 0%;
     background-color: var(--light);
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: var(--deepblue);
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
+  /* add this for Repo link */
+  .repo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills {
+    font-size: 96%;
+    color: black;
+  }
+
   /* for Responsive Images */
   /* .image-responsive {
       text-align: right;
