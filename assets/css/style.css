@@ -192,7 +192,7 @@ a {
   color: var(--deepblue);
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 1vw;
+  font-size: 1.02vw;
 }
 
 /* add this for Repo link */
@@ -203,7 +203,7 @@ a {
 
 .skills {
   font-size: 96%;
-  color: black;
+  color: var(--deepblue);
 }
 
 /* for class "contact_me" */
@@ -226,9 +226,9 @@ footer {
   text-align: right;
 }
 
-/* for media queries */
-/* phone <= 768px, tablet 768px-992px, desktop >=992px */
+/* media queries: phone <= 768px, tablet 768px-992px, desktop >=992px */
 
+/* for tablet */
 @media only screen and (max-width: 992px) {
   .heading {
     background: var(--deepblue);
@@ -335,9 +335,10 @@ footer {
     bottom: 8%;
     left: 0%;
     background-color: var(--light);
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: var(--deepblue);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.5vw;
   }
 
   .contact_me {
@@ -351,6 +352,7 @@ footer {
 
 }
 
+/* for mobile phone */
 @media only screen and (max-width: 768px) {
   .text-block0 {
     background-color: var(--light);
@@ -396,6 +398,21 @@ footer {
     border: 10px solid var(--light);
   }
 
+  .text-block1,
+  .text-block2,
+  .text-block3,
+  .text-block4,
+  .text-block5 {
+    position: absolute;
+    bottom: 8%;
+    left: 0%;
+    background-color: var(--light);
+    color: var(--deepblue);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 2.2vw;
+  }
+
   .contact_me li {
     display: block;
     padding: 0;
@@ -408,6 +425,3 @@ footer {
     padding: 0;
   }
 }
-
-/* @media only screen and (min-width: 992px) {...} */
-/* @media only screen and (max-width: 600px) and (min-width: 400px)  {...} */
