@@ -1,192 +1,331 @@
 /* root and variable  */
 :root {
-    --light: lightblue;
-    --deepblue: #31305a;
-  }
-  
-  * {
-    box-sizing: border-box;
-    /* margin: 0; */
-    /* padding: 0; */
-  }
-  
-  body {
-    background-color: rgb(226, 247, 253);
-    font-size: 16px;
-  }
-  
+  --light: lightblue;
+  --deepblue: #31305a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(226, 247, 253);
+  font-size: 16px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  background: var(--deepblue);
+}
+
+/* for avatar */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.heading h1 {
+  background-color: var(--light);
+  padding: 15px 15px 15px 60px;
+  color: var(--deepblue);
+}
+
+/* creating a horizontal list of links */
+li {
+  display: inline;
+}
+
+a {
+  display: inline-block;
+  text-align: center;
+  border-bottom: 3px solid;
+  text-decoration: none;
+}
+
+/* for class "scrollmenu" */
+.scrollmenu {
+  color: var(--light);
+  text-align: right;
+  margin: 20px;
+  padding: 20px;
+}
+
+.scrollmenu ul {
+  margin: 0%;
+}
+
+.scrollmenu a {
+  padding: 8px 8px 4px 8px;
+  font-weight: bolder;
+  color: var(--light);
+}
+
+/* Container holding the image and the text */
+.subtitle {
+  background-image: url("../images/portfolio_background.jpeg");
+  height: 20vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0%;
+  position: relative;
+  text-align: center;
+}
+
+.text-block0 {
+  background-color: var(--light);
+  color: var(--deepblue);
+  bottom: 3px;
+  right: 20px;
+  margin: 0%;
+  position: absolute;
+  padding: 13px;
+  margin: 20px;
+}
+
+/* For About Me section */
+.about_me {
+  padding-top: 1em;
+  display: flex;
+}
+
+.col-left {
+  width: 20%;
+  max-width: 100%;
+  border-right: 4px solid #6e5583;
+}
+
+.col-right {
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 15px;
+  right: 0px;
+}
+
+.col-left h3 {
+  text-align: right;
+  padding-right: 20px;
+  color: var(--deepblue);
+  font-size: 150%;
+  margin: 0;
+}
+
+.col-right p {
+  margin: 0 0 15px 0;
+  color: var(--deepblue);
+}
+
+/* for class "work" */
+.work {
+  display: flex;
+  padding-top: 1em;
+}
+
+.work a {
+  border-bottom: none;
+}
+
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+/* container1 - Container holding the image and the text */
+.container1 {
+  position: relative;
+  margin: 5px 20px;
+  border: 10px solid var(--light);
+}
+
+/* container2,3,4,5 - Container holding the image and the text */
+.container2,
+.container3,
+.container4,
+.container5 {
+  float: left;
+  position: relative;
+  width: 50%;
+  margin: 5px 10px;
+  border: 10px solid var(--light);
+}
+
+.container1 a,
+.container2 a,
+.container3 a,
+.container4 a,
+.container5 a {
+  display: block; /* to remove white space below image */
+}
+
+.container1 img,
+.container2 img,
+.container3 img,
+.container4 img,
+.container5 img {
+  display: block; /* to remove white space below image */
+  height: auto;
+}
+
+.container1:hover img,
+.container2:hover img,
+.container3:hover img,
+.container4:hover img,
+.container5:hover img {
+  opacity: 0.5;
+}
+
+/* Bottom left text */
+.text-block1,
+.text-block2,
+.text-block3,
+.text-block4,
+.text-block5 {
+  position: absolute;
+  bottom: 8%;
+  left: 0%;
+  background-color: var(--light);
+  color: var(--deepblue);
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1vw;
+}
+
+/* add this for Repo link */
+.repo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills {
+  font-size: 96%;
+  color: black;
+}
+
+/* for class "contact_me" */
+.contact_me {
+  padding-top: 1em;
+  display: flex;
+}
+
+.contact_me li {
+  display: inline-block;
+  padding: 35px;
+}
+
+.col-right ul {
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  text-align: right;
+}
+
+/* for media queries */
+/* phone <= 768px, tablet 768px-992px, desktop >=992px */
+
+@media only screen and (max-width: 992px) {
   .heading {
-    display: flex;
-    justify-content: space-between;
     background: var(--deepblue);
-  }
-  
-  /* for avatar */
-  .avatar {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+    display: block;
+    float: none;
   }
 
   .heading h1 {
-    background-color: var(--light);
-    padding: 15px 15px 15px 60px;
-    color: var(--deepblue);
-  }
-  
-  li {
-    /* creating a horizontal list of links */
-    display: inline;
-  }
-  
-  a {
-    display: inline-block;
     text-align: center;
-    border-bottom: 3px solid;
-    text-decoration: none;
+    padding: 20px;
+    margin: 0;
   }
-  
-  /* for class "scrollmenu" */
+
+  .heading ul {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
   .scrollmenu {
     color: var(--light);
     text-align: right;
-    margin: 20px;
-    padding: 20px;
+    margin: 0px 20px;
+    padding: 0 20px;
   }
-  
-  .scrollmenu ul {
-    margin: 0%;
-  }
-  
-  .scrollmenu a {
-    padding: 8px 8px 4px 8px;
-    font-weight: bolder;
-    color: var(--light);
-  }
-  
-  /* Container holding the image and the text */
-  .subtitle {
-    background-image: url("../images/portfolio_background.jpeg");
-    height: 20vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0%;
-    position: relative;
-    text-align: center;
-  }
-  
+
   .text-block0 {
     background-color: var(--light);
     color: var(--deepblue);
-    bottom: 3px;
-    right: 20px;
+    bottom: 7%;
+    left: 60%;
     margin: 0%;
+    padding: 0;
     position: absolute;
-    padding: 13px;
-    margin: 20px;
   }
-  
-  /* For About Me section */
+
   .about_me {
-    padding-top: 1em;
-    display: flex;
+    padding: 20px 0;
+    display: block;
+    float: none;
   }
-  
+
+  .about_me h3 {
+    text-align: left;
+  }
+
+  .about_me p {
+    margin: 15px 0;
+  }
+
   .col-left {
-    width: 20%;
-    max-width: 100%;
-    border-right: 4px solid #6e5583;
+    border-bottom: 4px solid #6e5583;
+    border-right: none;
+    width: 100%;
   }
-  
-  .col-right {
-    width: 80%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 15px;
-    right: 0px;
-  }
-  
+
   .col-left h3 {
-    text-align: right;
-    padding-right: 20px;
-    color: var(--deepblue);
-    font-size: 150%;
+    padding-left: 5px;
+  }
+
+  .col-right {
+    border-right: none;
+    width: 100%;
     margin: 0;
-    /* inline-size: 220px;
-      overflow-wrap: break-word; */
+    padding: 0;
   }
-  
-  .col-right p {
-    margin: 0 0 15px 0;
-    color: var(--deepblue);
-  }
-  
-  /* for class "work" */
+
   .work {
-    display: flex;
+    display: block;
     padding-top: 1em;
-    /* padding: 2%; */
+    float: none;
   }
-  
-  .work a {
-    border-bottom: none;
+
+  .work h3 {
+    text-align: left;
   }
-  
-  .row {
-    display: flex;
-    padding: 10px;
-  }
-  
-  /* container1 - Container holding the image and the text */
+
   .container1 {
+    float: none;
     position: relative;
-    /* flex: 100%; */
-    /* width: 100%; */
-    margin: 5px 20px;
+    left: 4px;
+    width: 95%;
+    margin: 20px 20px 5px 20px;
     border: 10px solid var(--light);
   }
-  
-  /* container2,3,4,5 - Container holding the image and the text */
+
   .container2,
   .container3,
   .container4,
   .container5 {
-    float: left;
+    float: none;
     position: relative;
-    width: 50%;
-    margin: 5px 10px;
+    left: 2px;
+    width: 100%;
     border: 10px solid var(--light);
   }
-  
-  .container1 a,
-  .container2 a,
-  .container3 a,
-  .container4 a,
-  .container5 a {
-    display: block; /* to remove white space below image */
-  }
-  
-  .container1 img,
-  .container2 img,
-  .container3 img,
-  .container4 img,
-  .container5 img {
-    display: block; /* to remove white space below image */
-    height: auto;
-  }
-  
-  .container1:hover img,
-  .container2:hover img,
-  .container3:hover img,
-  .container4:hover img,
-  .container5:hover img {
-    opacity: 0.5;
-  }
-  
-  /* Bottom left text */
+
   .text-block1,
   .text-block2,
   .text-block3,
@@ -196,249 +335,79 @@
     bottom: 8%;
     left: 0%;
     background-color: var(--light);
-    color: var(--deepblue);
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  /* add this for Repo link */
-  .repo {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .skills {
-    font-size: 96%;
     color: black;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  /* for Responsive Images */
-  /* .image-responsive {
-      text-align: right;
-      width: 100%;
-      height: auto;
-  } */
-  
-  /* for class "contact_me" */
   .contact_me {
     padding-top: 1em;
-    display: flex;
+    display: block;
   }
-  
+
+  .contact_me h3 {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .text-block0 {
+    background-color: var(--light);
+    color: var(--deepblue);
+    bottom: 7%;
+    left: 20%;
+    right: 20%;
+    margin: 0%;
+    padding: 0;
+    position: absolute;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .container1 {
+    float: none;
+    position: relative;
+    left: -8px;
+    width: 97%;
+    margin: 20px 20px 5px 20px;
+    border: 10px solid var(--light);
+  }
+
+  .container2,
+  .container4 {
+    float: none;
+    position: relative;
+    left: -8px;
+    width: 100%;
+    margin-top: 1px;
+    border: 10px solid var(--light);
+  }
+
+  .container3,
+  .container5 {
+    float: none;
+    position: relative;
+    left: -8px;
+    width: 100%;
+    margin: 15px 10px -5px 10px;
+    border: 10px solid var(--light);
+  }
+
   .contact_me li {
-    display: inline-block;
-    padding: 35px;
+    display: block;
+    padding: 0;
+    margin-top: 2%;
   }
-  
+
   .col-right ul {
-    text-align: center;
-    margin: 0;
+    text-align: left;
+    margin-top: 20px;
+    padding: 0;
   }
-  
-  footer {
-    text-align: right;
-  }
-  
-  /* for media queries */
-  /* phone <= 768px, tablet 768px-992px, desktop >=992px */
-  
-  @media only screen and (max-width: 992px) {
-    .heading {
-      background: var(--deepblue);
-      display: block;
-      float: none;
-    }
-    .heading h1 {
-      text-align: center;
-      padding: 20px;
-      margin: 0;
-    }
-  
-    .heading ul {
-      width: 100%;
-      padding: 15px;
-      text-align: center;
-    }
-  
-    .scrollmenu {
-      color: var(--light);
-      text-align: right;
-      margin: 0px 20px;
-      padding: 0 20px;
-    }
-  
-    .text-block0 {
-      background-color: var(--light);
-      color: var(--deepblue);
-      bottom: 7%;
-      left: 60%;
-      margin: 0%;
-      padding: 0;
-      position: absolute;
-    }
-  
-    .about_me {
-      padding: 20px 0;
-      display: block;
-      float: none;
-    }
-  
-    .about_me h3 {
-      text-align: left;
-    }
-  
-    .about_me p {
-      margin: 15px 0;
-    }
-  
-    .col-left {
-      border-bottom: 4px solid #6e5583;
-      border-right: none;
-      width: 100%;
-    }
-    .col-left h3 {
-      padding-left: 5px;
-    }
-  
-    .col-right {
-      border-right: none;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  
-    .work {
-      display: block;
-      padding-top: 1em;
-      float: none;
-    }
-  
-    .work h3 {
-      text-align: left;
-    }
-  
-    /* .row {
-      display: flex;
-      padding: 10px;
-      right: 10%;
-    } */
-  
-    .container1 {
-      float: none;
-      position: relative;
-      left: 4px;
-      width: 95%;
-      margin: 20px 20px 5px 20px;
-      border: 10px solid var(--light);
-    }
-  
-    .container2,
-    .container3,
-    .container4,
-    .container5 {
-      float: none;
-      position: relative;
-      left: 2px;
-      width: 100%;
-      /* margin: 5px 10px; */
-      border: 10px solid var(--light);
-    }
-  
-    .text-block1,
-    .text-block2,
-    .text-block3,
-    .text-block4,
-    .text-block5 {
-      position: absolute;
-      bottom: 8%;
-      left: 0%;
-      background-color: var(--light);
-      color: black;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .contact_me {
-      padding-top: 1em;
-      display: block;
-    }
-  
-    .contact_me h3 {
-      text-align: left;
-    }
-  
-    /* .contact_me li {
-      display: block;
-      padding: 0;
-      margin-top: 2%;
-    } */
-  
-    /* .col-right ul {
-      text-align: left;
-      margin: 0;
-      padding: 0;
-    } */
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .text-block0 {
-      background-color: var(--light);
-      color: var(--deepblue);
-      bottom: 7%;
-      left: 20%;
-      right: 20%;
-      margin: 0%;
-      padding: 0;
-      position: absolute;
-    }
-  
-    .row {
-      display: block;
-    }
-  
-    .container1 {
-      float: none;
-      position: relative;
-      left: -8px;
-      width: 97%;
-      margin: 20px 20px 5px 20px;
-      border: 10px solid var(--light);
-    }
-  
-    .container2,
-    .container4 {
-      float: none;
-      position: relative;
-      left: -8px;
-      width: 100%;
-      margin-top: 1px;
-      border: 10px solid var(--light);
-    }
-  
-    .container3,
-    .container5 {
-      float: none;
-      position: relative;
-      left: -8px;
-      width: 100%;
-      margin: 15px 10px -5px 10px;
-      border: 10px solid var(--light);
-    }
-  
-  
-    .contact_me li {
-      display: block;
-      padding: 0;
-      margin-top: 2%;
-    }
-  
-    .col-right ul {
-      text-align: left;
-      margin-top: 20px;
-      padding: 0;
-    }
-  }
-  
-  /* @media only screen and (min-width: 992px) {...} */
-  /* @media only screen and (max-width: 600px) and (min-width: 400px)  {...} */
-  
+}
+
+/* @media only screen and (min-width: 992px) {...} */
+/* @media only screen and (max-width: 600px) and (min-width: 400px)  {...} */
