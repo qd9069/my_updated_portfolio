@@ -44,16 +44,16 @@ Please feel free to reach out if you have any questions or comments regarding my
 
 The following images demonstrate the web application's appearance and functionality:
 
-Mobile:
-![image for the mobile version](assets/images/my_updated_portfolio_mobile.png)
+**Mobile**:
+![image for the mobile version](assets/images/my_updated_portfolio_mobile2.png)
 
 
-Tablet:
-![image for the tablet version](assets/images/my_updated_portfolio_tablet.png)
+**Tablet**:
+![image for the tablet version](assets/images/my_updated_portfolio_tablet2.png)
 
 
-Desktop:
-![image for the desktop version](assets/images/my_updated_portfolio_desktop.png)
+**Desktop**:
+![image for the desktop version](assets/images/my_updated_portfolio_desktop-2.png)
 
 ## License
 
