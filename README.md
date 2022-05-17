@@ -1,5 +1,7 @@
 # My Personal Portfolio
 
+![badge of MIT license](https://img.shields.io/badge/license-MIT-9cf)
+
 ## Link
 
 ### Please click [here](https://qd9069.github.io/my_updated_portfolio/) to find the deployed project.
